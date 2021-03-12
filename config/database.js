@@ -19,8 +19,8 @@ module.exports = ({ env }) => ({
     default: {
       connector: 'mongoose',
       settings: {
-        client: 'mongo',
-        host: env('DATABASE_HOST', '127.0.0.1'),
+        // client: 'mongo',
+        host: env('DATABASE_HOST', 'localhost'),
         srv: env.bool('DATABASE_SRV', false),
         port: env.int('DATABASE_PORT', 27017),
         database: env('DATABASE_NAME', 'mds'),
@@ -29,7 +29,7 @@ module.exports = ({ env }) => ({
       },
       options: {
         authenticationDatabase: env('AUTHENTICATION_DATABASE', null),
-        ssl: env.bool('DATABASE_SSL', true),
+        ssl: env.bool('DATABASE_SSL', false),
       },
     },
   },
