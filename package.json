@@ -5,7 +5,7 @@
   "description": "A Strapi application",
   "scripts": {
     "dev": "strapi develop",
-    "start": "strapi start",
+    "start": "pm2-runtime start ecosystem.config.js --env production",
     "build": "strapi build",
     "strapi": "strapi"
   },
@@ -13,9 +13,11 @@
   "dependencies": {
     "knex": "0.21.18",
     "mime-types": "^2.1.27",
+    "pm2": "^4.5.5",
     "strapi": "3.5.3",
     "strapi-admin": "3.5.3",
     "strapi-connector-mongoose": "3.5.3",
+    "strapi-middleware-cache": "^1.5.0",
     "strapi-plugin-content-manager": "3.5.3",
     "strapi-plugin-content-type-builder": "3.5.3",
     "strapi-plugin-email": "3.5.3",
