@@ -13,4 +13,12 @@ module.exports = {
     const entity = await strapi.services.article.findOne({ slug });
     return sanitizeEntity(entity, { model: strapi.models.article });
   },
+
+  async findAllSlugs(ctx) {
+    // const entity = await strapi.services.article.findOne({ slug });
+    const entity = await strapi.services.article.findAllSlugs();
+    const les = entity.map(el => el.slug);
+    return sanitizeEntity(les, { model: strapi.models.article });
+    // return entity
+  },
 };

@@ -2,6 +2,14 @@
   "routes": [
     {
       "method": "GET",
+      "path": "/articles/slugs",
+      "handler": "article.findAllSlugs",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/articles",
       "handler": "article.find",
       "config": {
