@@ -26,9 +26,23 @@ module.exports = {
       ...params
     };
     if (category) customParams['category'] = category.toString();
-    console.log(customParams);
     return strapi.query('article').find(customParams, populate);
   },
+
+  async count(params, populate) {
+    let category;
+    if (params?.hasOwnProperty('category_name')) {
+      const el = await strapi.query('category').findOne({ slug: params['category_name'] }, populate);
+      category = el?._id;
+      delete params['category_name'];
+    }
+    const customParams = {
+      ...params
+    };
+    if (category) customParams['category'] = category.toString();
+    return strapi.query('article').count(customParams);
+  },
+
   findAllSlugs(params, populate) {
     const customParams = {
       status: 'published',
