@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "writers",
   "info": {
-    "name": "Writer"
+    "name": "Writer",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "name": {
@@ -22,11 +24,19 @@
       "required": false
     },
     "articles": {
-      "via": "author",
-      "collection": "article"
+      "collection": "article",
+      "via": "author"
     },
     "email": {
       "type": "string"
+    },
+    "titolo": {
+      "type": "string",
+      "required": true
+    },
+    "bio": {
+      "type": "richtext",
+      "required": true
     }
   }
 }
