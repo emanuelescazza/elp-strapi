@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pagina-facebook",
+      "handler": "pagina-facebook.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pagina-facebook",
+      "handler": "pagina-facebook.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pagina-facebook",
+      "handler": "pagina-facebook.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

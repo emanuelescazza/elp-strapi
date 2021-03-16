@@ -5,7 +5,8 @@
   "description": "A Strapi application",
   "scripts": {
     "dev": "strapi develop",
-    "start": "pm2-runtime start ecosystem.config.js --env production",
+    "start": "strapi start",
+    "startPM2": "pm2-runtime start ecosystem.config.js --env production",
     "build": "strapi build",
     "strapi": "strapi"
   },
@@ -17,7 +18,6 @@
     "strapi": "3.5.3",
     "strapi-admin": "3.5.3",
     "strapi-connector-mongoose": "3.5.3",
-    "strapi-middleware-cache": "^1.5.0",
     "strapi-plugin-content-manager": "3.5.3",
     "strapi-plugin-content-type-builder": "3.5.3",
     "strapi-plugin-email": "3.5.3",

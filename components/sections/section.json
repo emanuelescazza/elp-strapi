@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_sections_sections",
+  "info": {
+    "name": "Section",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "titolo": {
+      "type": "string",
+      "required": true
+    },
+    "sottotitolo": {
+      "type": "string",
+      "required": true
+    },
+    "contenuto": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

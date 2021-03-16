@@ -24,6 +24,7 @@
       "required": false
     },
     "articles": {
+      "private": true,
       "collection": "article",
       "via": "author"
     },
@@ -37,6 +38,13 @@
     "bio": {
       "type": "richtext",
       "required": true
+    },
+    "telefono": {
+      "type": "string",
+      "required": false
+    },
+    "linkedin": {
+      "type": "string"
     }
   }
 }

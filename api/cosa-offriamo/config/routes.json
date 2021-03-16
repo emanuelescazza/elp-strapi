@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/cosa-offriamo",
+      "handler": "cosa-offriamo.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/cosa-offriamo",
+      "handler": "cosa-offriamo.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/cosa-offriamo",
+      "handler": "cosa-offriamo.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

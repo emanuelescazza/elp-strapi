@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "pagina_facebooks",
+  "info": {
+    "name": "Pagina Facebook"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}
