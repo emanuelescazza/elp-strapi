@@ -1,6 +1,14 @@
 {
   "routes": [
     {
+      "method": "POST",
+      "path": "/contatti",
+      "handler": "homepage.contatti",
+      "config": {
+        "policies": []
+      }
+    },
+    {
       "method": "GET",
       "path": "/homepage",
       "handler": "homepage.find",

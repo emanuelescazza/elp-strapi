@@ -45,6 +45,9 @@
     },
     "linkedin": {
       "type": "string"
+    },
+    "facebook": {
+      "type": "string"
     }
   }
 }
