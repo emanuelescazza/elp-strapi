@@ -21,9 +21,8 @@
       "required": true
     },
     "articles": {
-      "private": true,
-      "collection": "article",
-      "via": "category"
+      "via": "category",
+      "collection": "article"
     }
   }
 }

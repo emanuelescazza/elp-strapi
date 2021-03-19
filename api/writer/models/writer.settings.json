@@ -24,9 +24,8 @@
       "required": false
     },
     "articles": {
-      "private": true,
-      "collection": "article",
-      "via": "author"
+      "via": "author",
+      "collection": "article"
     },
     "email": {
       "type": "string"

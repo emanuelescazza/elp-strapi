@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_meta_tags",
+  "info": {
+    "name": "Meta-tag",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "tag": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

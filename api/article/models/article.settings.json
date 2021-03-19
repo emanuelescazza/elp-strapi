@@ -42,8 +42,8 @@
       "required": true
     },
     "category": {
-      "via": "articles",
-      "model": "category"
+      "model": "category",
+      "via": "articles"
     },
     "image": {
       "model": "file",
@@ -57,8 +57,13 @@
       "required": false
     },
     "author": {
-      "via": "articles",
-      "model": "writer"
+      "model": "writer",
+      "via": "articles"
+    },
+    "tags": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.meta-tag"
     }
   }
 }
